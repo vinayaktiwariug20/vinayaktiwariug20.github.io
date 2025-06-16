@@ -53,7 +53,7 @@
       transform: scale(1.05);
     }
 
-    .bubbles {
+    /*.bubbles {
       position: absolute;
       top: 0;
       left: 0;
@@ -63,7 +63,7 @@
       background-image: url('https://i.imgur.com/QT4G2e3.png');
       background-repeat: repeat;
       opacity: 0.1;
-    }
+    }*/
   </style>
 </head>
 <body>
