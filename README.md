@@ -9,7 +9,7 @@
       margin: 0;
       font-family: "Segoe UI", sans-serif;
       background: linear-gradient(to top, #c9f7ff, #ffffff 40%);
-      background-image: 'assets/bubground.png';
+      background-image: url('assets/bubground.png');
       background-size: cover;
       background-attachment: fixed;
       color: #000;
