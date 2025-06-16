@@ -74,7 +74,7 @@
   <div class="container">
     <h1>Vinayak Tiwari</h1>
     <p>Welcome to my GitHub Pages site.</p>
-    <a href="https://github.com/vinayaktiwari" target="_blank">View My GitHub</a>
+    <a href="https://github.com/vinayaktiwariug20" target="_blank">View My GitHub</a>
   </div>
 </body>
 </html>
