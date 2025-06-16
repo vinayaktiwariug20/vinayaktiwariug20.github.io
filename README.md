@@ -12,7 +12,7 @@
       margin: 0;
       font-family: "Segoe UI", sans-serif;
       background: linear-gradient(to top, #c9f7ff, #ffffff 40%);
-      background-image: url('https://upload.wikimedia.org/wikipedia/en/2/20/Windows_XP_Default_Wallpaper.jpg');
+      background-image: '../assets/bubground.png';
       background-size: cover;
       background-attachment: fixed;
       color: #000;
