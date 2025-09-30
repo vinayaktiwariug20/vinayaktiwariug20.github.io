@@ -73,5 +73,11 @@
     <p>Welcome to my GitHub Pages site.</p>
     <a href="https://github.com/vinayaktiwariug20" target="_blank">View My GitHub</a>
   </div>
+  <div class="container">
+    <a href="https://vinayaktiwariug20.github.io/waste-classify" target="_blank">Machine Learning: Waste Image Classification</a>
+  </div>
+  <div class="container">
+    <a href="https://vinayaktiwariug20.github.io/StrideSync-demo" target="_blank">Retail Product Webpage Demo</a>
+  </div>
 </body>
 </html>
