@@ -11,8 +11,12 @@
             background: linear-gradient(to bottom,
                     #8dd2ff 0%,
                     #398cff 100%);
-            height: 100%;
+            background-attachment: fixed;
+            height: 95vh;
             width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
         }
 
         body {
@@ -20,7 +24,9 @@
             font-family: system-ui, -apple-system, sans-serif;
             color: #111;
             background: transparent;
-            padding: 3rem 0;
+            /* padding: 3rem; */
+            padding-top: 3rem;
+            height: 95vh;
         }
 
 
@@ -60,6 +66,19 @@
             text-decoration: none;
             color: #0066cc;
             font-weight: 600;
+            font-size: 12pt;
+        }
+
+        .project-links {
+            color: #0066cc;
+        }
+
+        .project-links a {
+            display: inline-block;
+            color: #0066cc;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 14pt;
         }
 
         section {
@@ -74,7 +93,7 @@
         <img src="assets/profilep.png" alt="Profile photo of Vinayak Tiwari" class="profile-photo" />
         <h1>Vinayak Tiwari</h1>
         <p class="subtitle">
-            MS Computer Science @ USC · Machine Learning · Computer Vision
+            MS Computer Science @ USC
         </p>
 
         <div class="links">
@@ -84,7 +103,7 @@
 
         <section>
             <h2>Projects</h2>
-            <ul>
+            <ul class="project-links">
                 <li>
                     <a href="https://vinayaktiwariug20.github.io/waste-classify" target="_blank">
                         Waste Image Classification (Deep Learning Demo)
@@ -101,9 +120,8 @@
         <section>
             <h2>About</h2>
             <p>
-                I'm a Master's student in Computer Science at USC with experience building
-                practical software systems and applied machine learning projects,
-                including deep learning models and end-to-end demos.
+                I'm a Master's student in Computer Science at USC. Here you can find links to selected project work as
+                well as my LinkedIn and GitHub profiles.
             </p>
         </section>
     </main>
