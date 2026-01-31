@@ -33,7 +33,7 @@
         main {
             max-width: 720px;
             margin: 0 auto;
-            padding: 3rem 1.5rem;
+            padding: 1.5rem;
 
             background: white;
             border-radius: 10px;
@@ -43,6 +43,7 @@
 
         h1 {
             margin-bottom: 0.2rem;
+            margin-top: 0.2rem;
         }
 
         .subtitle {
@@ -51,22 +52,24 @@
         }
 
         .profile-photo {
-            width: 120px;
-            height: 120px;
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 1rem;
+            margin-bottom: 0.2rem;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
         .links a {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
             margin-right: 1rem;
             margin-top: 0.5rem;
             text-decoration: none;
             color: #0066cc;
             font-weight: 600;
             font-size: 12pt;
+            gap: 8px;
         }
 
         .project-links {
@@ -84,6 +87,15 @@
         section {
             margin-top: 2.5rem;
         }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            /* vertical alignment */
+            gap: 8px;
+            /* space between image and text */
+            height: 40px;
+        }
     </style>
 </head>
 
@@ -97,8 +109,13 @@
         </p>
 
         <div class="links">
-            <a href="https://www.linkedin.com/in/vinayak09" target="_blank">LinkedIn</a>
-            <a href="https://github.com/vinayaktiwariug20" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/vinayak09" target="_blank">
+                <img src="assets/linkedin_icon.png" class="icon"></i>LinkedIn
+            </a>
+            <!-- <a href="https://www.linkedin.com/in/vinayak09" target="_blank">LinkedIn</a> -->
+            <a href="https://github.com/vinayaktiwariug20" target="_blank">
+                <img src="assets/github_icon.png" class="icon"></i>GitHub
+            </a>
         </div>
 
         <section>
