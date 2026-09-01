@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -41,7 +40,7 @@
         }
     }
     </script>
-    <title>Vinayak Tiwari</title>
+
     <style>
         html {
             background: linear-gradient(to bottom,
@@ -131,6 +130,23 @@
             margin-bottom: 1rem;
         }
 
+        /* The winner/team line under a project title. It used to be a <small>
+           inside the <a>, so it inherited the link's colour and weight; now that
+           it sits outside the anchor those have to be stated. */
+        .project-meta {
+            display: block;
+            color: #0066cc;
+            font-weight: 600;
+            font-size: 11pt;
+            margin-top: 2px;
+        }
+
+        .project-group h3 {
+            margin-bottom: 0.4rem;
+            font-size: 1.05em;
+            color: #333;
+        }
+
         .project-desc {
             display: block;
             color: #555;
@@ -152,6 +168,30 @@
 
         .project-desc a.source:hover {
             color: #0066cc;
+        }
+
+        .roles {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .roles li {
+            margin-bottom: 1rem;
+        }
+
+        .role-title {
+            display: block;
+            font-weight: 600;
+            font-size: 14pt;
+            color: #111;
+        }
+
+        /* Dates on their own line, quieter than the title. */
+        .role-meta {
+            display: block;
+            color: #777;
+            font-size: 10.5pt;
+            margin-top: 1px;
         }
 
         section {
@@ -222,6 +262,27 @@
                 font-size: 0.9em;
             }
 
+            .project-meta {
+                font-size: 0.85em;
+            }
+
+            .roles {
+                margin-top: 8px;
+                margin-bottom: 8px;
+            }
+
+            .roles li {
+                margin-bottom: 0.75rem;
+            }
+
+            .role-title {
+                font-size: 1em;
+            }
+
+            .role-meta {
+                font-size: 0.8em;
+            }
+
             .project-desc a.source {
                 font-size: 0.85em;
             }
@@ -253,6 +314,31 @@
             <h2>Selected Projects</h2>
 
             <ul class="project-links">
+                <li>
+                    <a
+                        href="https://vinayaktiwariug20.github.io/english-teach/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        My English &ndash; Offline Hindi-to-English Learning App
+                    </a>
+
+                    <span class="project-desc">
+                        An offline, ad-free app for an adult beginner learning English from
+                        Hindi. No account, no ads and no network access once loaded. Sentences
+                        are generated rather than written out, so the Hindi agreement stays
+                        correct. Actively expanding.
+                        <a
+                            class="source"
+                            href="https://github.com/vinayaktiwariug20/english-teach"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            source
+                        </a>
+                    </span>
+                </li>
+
                 <li>
                     <a
                         href="https://vinayaktiwariug20.github.io/popsight"
@@ -367,6 +453,34 @@
                     </li>
                 </ul>
             </div>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+
+            <ul class="roles">
+                <li>
+                    <span class="role-title">Associate Software Engineer &middot; inMorphis</span>
+                    <span class="role-meta">Jun 2024 &ndash; Dec 2024 &middot; Noida, India</span>
+
+                    <span class="project-desc">
+                        Full-stack React and Node feature work on the internal product team,
+                        plus CI/CD with GitHub Actions and Docker, backend query optimisation,
+                        and a testing push that raised repository coverage from 74% to 92%.
+                    </span>
+                </li>
+
+                <li>
+                    <span class="role-title">Software Engineering Intern &middot; inMorphis</span>
+                    <span class="role-meta">Dec 2023 &ndash; May 2024 &middot; Noida, India</span>
+
+                    <span class="project-desc">
+                        ServiceNow workflow automation, Service Portal widgets, and REST
+                        integrations that turned third-party monitoring alerts into incidents
+                        automatically for enterprise clients.
+                    </span>
+                </li>
+            </ul>
         </section>
 
         <section>
