@@ -144,6 +144,14 @@
             margin-bottom: 1rem;
         }
 
+        /* Title for a project with nothing public to link to. */
+        .project-title {
+            display: block;
+            color: #111;
+            font-weight: 600;
+            font-size: 14pt;
+        }
+
         /* The winner/team line under a project title. It used to be a <small>
            inside the <a>, so it inherited the link's colour and weight; now that
            it sits outside the anchor those have to be stated. */
@@ -278,6 +286,10 @@
                 font-size: 1em;
             }
 
+            .project-title {
+                font-size: 1em;
+            }
+
             .project-links li {
                 margin-bottom: 0.75rem;
             }
@@ -353,32 +365,6 @@
             <ul class="project-links">
                 <li>
                     <a
-                        href="https://vinayaktiwariug20.github.io/english-teach/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        My English &ndash; Offline Hindi-to-English Learning App
-                    </a>
-
-                    <span class="project-desc">
-                        An offline, ad-free app for an adult beginner learning English from
-                        Hindi. No account, no ads and no network access once loaded. Sentences
-                        are generated from grammar-tagged nouns rather than written out, so the
-                        Hindi agreement holds across tenses, and a shop mode sets change-counting
-                        problems on the spot. Actively expanding.
-                        <a
-                            class="source"
-                            href="https://github.com/vinayaktiwariug20/english-teach"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            source
-                        </a>
-                    </span>
-                </li>
-
-                <li>
-                    <a
                         href="https://vinayaktiwariug20.github.io/popsight"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -387,15 +373,15 @@
                     </a>
 
                     <span class="project-meta">
-                        Hack the Coast 2026 Winner · Team Project
+                        Won AI Coding Project track &middot; Hack the Coast 2026 &middot; Team of 3
                     </span>
 
                     <span class="project-desc">
-                        An AI-powered product discovery system built for
-                        the Prince of Peace challenge.
+                        A full-stack sourcing workspace for CPG distributor Prince of Peace. I built the
+                        conversational copilot: a LangGraph agent with six tools, two-tier memory, and
+                        retrieval over the company's catalog, vendor and sales data.
                     </span>
                 </li>
-
                 <li>
                     <a
                         href="https://docktwin.vercel.app"
@@ -410,10 +396,11 @@
                     </span>
 
                     <span class="project-desc">
-                        Describe a port terminal in plain English or a photo and get a 3D
-                        digital twin, then stress-test it against conflicting signals. Meta
-                        models plan and propose rule fixes while a deterministic simulation
-                        engine proves them and makes the decisions.
+                        Turns a plain-English description or photo of a container terminal into a 3D
+                        digital twin, then stress-tests its rules against conflicting signals. The model
+                        plans and a deterministic engine decides. I built the safety policy layer: six
+                        policies that model-written rules and generated fixes cannot bypass, merged with
+                        a 466-test suite passing.
                         <a
                             class="source"
                             href="https://github.com/nduy1234/DockTwin"
@@ -424,7 +411,43 @@
                         </a>
                     </span>
                 </li>
+                <li>
+                    <a
+                        href="https://ihatepsm.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        ihatepsm.com &ndash; Drupal-to-Static Migration
+                    </a>
 
+                    <span class="project-meta">
+                        Solo project &middot; Production site
+                    </span>
+
+                    <span class="project-desc">
+                        Migrated an 11-year-old, 590-page site off end-of-life Drupal 7, which
+                        was exposed to publicly exploited RCE and SQL-injection vulnerabilities,
+                        to a static Eleventy site on Cloudflare. All 621 legacy URLs were
+                        preserved with zero downtime.
+                    </span>
+                </li>
+                <li>
+                    <span class="project-title">
+                        Schema-Aware Text-to-SQL Retrieval
+                    </span>
+
+                    <span class="project-meta">
+                        USC Viterbi &middot; Team of 6
+                    </span>
+
+                    <span class="project-desc">
+                        An agentic Text-to-SQL system built by a team of six (Gemma-3 with LoRA
+                        fine-tuning, MCP tools). I designed the schema-aware retrieval layer over a
+                        30-table schema and the FastAPI service that let the team build in parallel. The
+                        full system reached 100% accuracy (20/20 SQL, 10/10 metadata) against a 55%
+                        baseline.
+                    </span>
+                </li>
                 <li>
                     <a
                         href="https://aiatusc-outdoor-nav.doorstepusc.workers.dev/"
@@ -439,10 +462,11 @@
                     </span>
 
                     <span class="project-desc">
-                        Wayfinding for USC events: walking routes and gate-aware driving to
-                        surveyed parking entrances, then on to the right room. Includes staff
-                        gate and road restrictions and home-game-date avoidance, deployed on
-                        Cloudflare Workers and D1.
+                        Gets people to a campus event room: first to the right building door, then inside.
+                        I led the outdoor routing, a graph of 11,484 nodes built from OpenStreetMap campus
+                        paths and served from Cloudflare Workers and D1, which routes around gate and
+                        staff-reported closures. Continued after the hackathon with staff tools for gate
+                        hours and closures.
                         <a
                             class="source"
                             href="https://github.com/vinayaktiwariug20/AIatUSC"
@@ -453,38 +477,61 @@
                         </a>
                     </span>
                 </li>
-
-                <li>
-                    <a
-                        href="https://vinayaktiwariug20.github.io/magnetic-lacquer/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Magnetic Lacquer – Physics Sandbox
-                    </a>
-
-                    <span class="project-desc">
-                        A 3D physics sandbox that predicts magnetic
-                        nail-polish finishes from a simulated magnetic
-                        field. Includes soft-iron tool modeling and
-                        245 automated tests.
-                        <a
-                            class="source"
-                            href="https://github.com/vinayaktiwariug20/magnetic-lacquer"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            source
-                        </a>
-                    </span>
-                </li>
-
             </ul>
 
             <div class="project-group">
                 <h3>Other Projects</h3>
 
                 <ul class="project-links">
+                    <li>
+                        <a
+                            href="https://vinayaktiwariug20.github.io/magnetic-lacquer/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Magnetic Lacquer – Physics Sandbox
+                        </a>
+
+                        <span class="project-desc">
+                            A 3D physics sandbox that predicts magnetic
+                            nail-polish finishes from a simulated magnetic
+                            field. Includes soft-iron tool modeling and
+                            245 automated tests.
+                            <a
+                                class="source"
+                                href="https://github.com/vinayaktiwariug20/magnetic-lacquer"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                source
+                            </a>
+                        </span>
+                    </li>
+                    <li>
+                        <a
+                            href="https://vinayaktiwariug20.github.io/english-teach/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            My English &ndash; Offline Hindi-to-English Learning App
+                        </a>
+
+                        <span class="project-desc">
+                            An offline, ad-free app for an adult beginner learning English from
+                            Hindi. No account, no ads and no network access once loaded. Sentences
+                            are generated from grammar-tagged nouns rather than written out, so the
+                            Hindi agreement holds across tenses, and a shop mode sets change-counting
+                            problems on the spot. Actively expanding.
+                            <a
+                                class="source"
+                                href="https://github.com/vinayaktiwariug20/english-teach"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                source
+                            </a>
+                        </span>
+                    </li>
                     <li>
                         <a
                             href="https://vinayaktiwariug20.github.io/waste-classify"
@@ -495,9 +542,8 @@
                         </a>
 
                         <span class="project-desc">
-                            Deep-learning image classification on the
-                            RealWaste dataset, comparing four CNN backbones.
-                            EfficientNet achieved F1 0.861 and AUC 0.988.
+                            A course project comparing four CNN backbones on the RealWaste dataset, with
+                            EfficientNet-B0 best at F1 0.861 and AUC 0.988. Deployed as a live demo.
                             <a
                                 class="source"
                                 href="https://github.com/vinayaktiwariug20/waste-classify"
@@ -508,7 +554,6 @@
                             </a>
                         </span>
                     </li>
-
                     <li>
                         <a
                             href="https://github.com/vinayaktiwariug20/glowshift"
